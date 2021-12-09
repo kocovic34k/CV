@@ -1,0 +1,85 @@
+#education{
+    margin-bottom: 30px;
+
+    .timeline {
+        margin: 0 auto;
+        position: relative;
+        
+        @include responsive(desktop) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "a1 a1 . ."
+            ". . a2 a2"
+            "a3 a3 . .";
+            
+            .item {
+                position: relative;
+                margin-bottom: 0;
+        
+                &:after {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    background: $secondary-color;
+                    border-radius: 50%;
+                    top: calc(50% - 5px);
+                }
+            }
+    
+            @for $i from 1 through 3 {
+                .item:nth-child(#{$i}) {
+                    grid-area: a#{$i};
+                
+                    @if $i % 2 == 0 {
+                        margin-left: 20px;
+
+                        &:after {
+                            left: -30px;
+                        }
+                    } @else {
+                        margin-right: 20px;
+
+                        &:after {
+                            right: -30px;
+                        }
+                    }
+                }
+            }
+
+            &:after {
+                content: '';
+                width: 3px;
+                position: absolute;
+                top: -40px;
+                bottom: -40px;
+                left: calc(50% - 1.5px);
+                background: $secondary-color;
+                align-self: center;
+            }
+        }
+    }
+
+    .item{
+        padding: 20px;
+        background-color: $secondary-color;
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 20px;
+            font-weight: 500px;
+        }
+
+        p {
+            font-size: 14px;
+            font-style: italic;
+            line-height: 20px;
+            font-weight: 300px;
+        }
+    }
+}

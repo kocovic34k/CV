@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $primary-bg-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include responsive(laptop) {
+        max-width: 80%;
+    }
+}
+
+.section-heading {
+    font-size: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+
+    @include responsive(tablet) {
+        font-size: 30px;
+    }
+}

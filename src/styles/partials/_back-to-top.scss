@@ -1,0 +1,12 @@
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    background-color: $secondary-color;
+    text-decoration: none;
+    color: $primary-text-color;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+}

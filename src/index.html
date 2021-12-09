@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miljan Kočović</title>
+</head>
+<body id="body">
+    <header class="header">
+
+            <a href="#home" class="logo">
+                <p>M<span>K</span></p>
+            </a>
+            <nav class="navbar">
+                <a href="#body" class="active">Home</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#education-section">Education</a>
+                <a href="#experience-section">Experience</a>
+                <a href="#contact-section">Contact</a>
+            </nav>
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="avatar">
+                <img src="./assets/avatar.png" alt="profile picture">
+            </div>
+            <div class="name">Miljan Kočović</div>
+            <div class="position">
+                Frontend Developer
+            </div>
+            <div class="about">
+                <p>
+                    I am a flexible person seeking employment which will allow development, growth and make use of my existing skills.
+                     I am a quick to learn and willing to adapt to any job. I always seek to achive a high standard in whichever work I undertake.
+                </p>
+            </div>
+            <div class="download-cv">
+                <a href="./assets/MiljanKocovicResume.pdf" download>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="skills-section"></div>
+
+    <section id="skills">
+        <h2 class="section-heading">Skills and competences</h2>
+        <div class="container">
+            <div class="skill">
+                <img src="./assets/html-5.png" alt="html icon">
+            </div>
+            <div class="skill">
+                <img src="./assets/css-3.png" alt="css icon">
+            </div>
+            <div class="skill">
+                <img src="./assets/javascript-programming-language.png" alt="javascript icon">
+            </div>
+            <div class="skill">
+                <img src="./assets/sass.png" alt="sass-icon">
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="education-section"></div>
+
+    <section id="education">
+        <div class="container">
+            <h1 class="section-heading">Education</h1>
+            <div class="timeline">
+                <div class="item">
+                    <h1>Prva tehnička škola (2010 - 2014)</h1>
+                    <p>Construction technician</p>
+                </div>
+                <div class="item">
+                    <h1>HTML / CSS Course (2018)</h1>
+                    <p></p>
+                </div>
+                <div class="item">
+                    <h1>JavaScript Course (2018 - 2019)</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="experience-section"></div>
+    
+    <section id="experience">
+        <div class="container">
+            <h1 class="section-heading">Experience</h1>
+            <div class="timeline">
+                <div class="item">
+                    <h1>VV Info (2019 - 2020)</h1>
+                    <p>IT Support Technician</p>
+                </div>
+                <div class="item">
+                    <h1>Freelance (2020 - 2021)</h1>
+                    <p></p>
+                </div>
+                <div class="item">
+                    <h1>Adient Kragujevac JIT (2021)</h1>
+                    <p>Operator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider" id="contact-section"></div>
+
+    <section id="contact">
+        <div class="container">
+            <h1 class="section-heading">Kontakt</h1>
+            <form action="" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="input" type="text" name="Name" id="name" placeholder="Ime i Prezime" required minlength="3" maxlength="25" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input class="input" type="email" name="Email" id="email" placeholder="email@domain.tld" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="input" name="Message" id="message" rows="5" placeholder="Unesite svoju poruku."></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="submit">Send</button>
+              </div>
+            </form>
+          </div>
+    </section>
+
+    <a href="#body" class="back-to-top">TO TOP</a>
+    <script src="../dist/main.js"></script>
+</body>
+</html>

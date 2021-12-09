@@ -1,0 +1,45 @@
+#contact {
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .input {
+            padding: 20px 10px;
+            border: 0;
+            background: $secondary-bg-color;
+            border-radius: 10px;
+            color: $light-color;
+
+            &::placeholder {
+                color: $light-color;
+            }
+        }
+
+        label {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        button {
+            color: $primary-bg-color;
+            font-size: 20px;
+            padding: 20px 30px;
+            background-color: $dark-color;
+            border-radius: 30px;
+            transition: .2s;
+            width: 300px;
+            margin: 20px auto;
+
+            &:hover {
+                cursor: pointer;
+                background: lighten($dark-color, 20%);
+            }
+        }
+    }
+}
